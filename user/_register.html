@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie9" lang="vi"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--><html lang="vi"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content=" " />
+	<meta name="keywords" content=" " />
+	<title>1SHIP - Trở thành tài xế</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css" />
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="cleartype" content="on" />
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="../js/html5shiv.min.js"></script>
+		<script src="../js/IE9.js"></script>
+		<script src="../js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="user-register user-page">
+	<div class="wrapper">
+
+		<header class="role-header" id="header">
+			<div class="logo-lg text-center"><a href="../"><img src="../images/logo-lg.png" alt="1SHIP" /></a></div>
+			<button type="button" class="btn-close fa-time"><img src="../images/ico-time.png" alt="CLOSE" /></button>
+		</header>
+
+		<div class="block-users panel panel-primary form-register">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="w1 active"><a href="#personal" aria-controls="personal" role="tab" data-toggle="tab">Đối tác vận chuyển là cá nhân</a></li>
+				<li role="presentation" class="w2"><a href="#business" aria-controls="business" role="tab" data-toggle="tab">Đối tác vận chuyển là doanh nghiệp</a></li>
+				<li role="presentation" class="w3"><a href="#customer" aria-controls="messages" role="tab" data-toggle="tab">Khách hàng 1ship</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="personal">
+					<form class="form-horizontal">
+
+						<div class="form-group">
+							<label for="fullname" class="col-sm-22 control-label">Họ và Tên:</label>
+							<div class="col-sm-33">
+								<input type="text" class="form-control" id="fullname" name="fullname">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="tel" class="col-sm-22 control-label">Số điện thoại:</label>
+							<div class="col-sm-33">
+								<input type="text" class="form-control" id="tel" name="tel">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="code" class="col-sm-22 control-label">Mã giới thiệu</label>
+							<div class="col-sm-33">
+								<input type="text" class="form-control" id="code" name="code">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="sl-travel" class="col-sm-22 control-label">Loại phương tiện</label>
+							<div class="col-sm-33">
+								<div class="clearfix wrap-2col">
+									<div class="col">
+										<select name="sl-travel" id="sl-travel" class="form-control">
+											<option value="1">Xe máy</option>
+											<option value="2">Xe đạp</option>
+											<option value="3">Xe bus</option>
+											<option value="4">Xe taxi</option>
+											<option value="5">Máy bay</option>
+											<option value="6">Đường thủy</option>
+											<option value="7">Xe máy</option>
+										</select>
+									</div>
+									<div class="col">
+										<select name="sl-travel" id="sl-travel2" class="form-control">
+											<option value="1">Xe máy</option>
+											<option value="2">Xe đạp</option>
+											<option value="3">Xe bus</option>
+											<option value="4">Xe taxi</option>
+											<option value="5">Máy bay</option>
+											<option value="6">Đường thủy</option>
+											<option value="7">Xe máy</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<span class="col-sm-22 control-label">Ảnh xe<i>(Chụp ảnh xe rõ biển số)</i></span>
+							<div class="col-sm-33">
+								<input type="file" class="input-file" id="file1" name="file1">
+
+								<input type="file" class="" id="file2" name="file2">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<span class="col-sm-22 control-label">Ảnh của bạn<i>(Hình ảnh rõ ràng chụp thẳng mặt)</i></span>
+							<div class="col-sm-33">
+								<input type="file" class="input-file" id="file3" name="file3">
+								<label for="file3" class="lbl-file">
+									<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+								</label>
+
+								<input type="file" class="input-file" id="file4" name="file4">
+								<label for="file4" class="lbl-file">
+									<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<span class="col-sm-22 control-label">Bằng lái<i>(Chụp rõ tên, số bằng)</i></span>
+							<div class="col-sm-33">
+								<input type="file" class="input-file" id="file5" name="file5">
+								<label for="file5" class="lbl-file">
+									<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+								</label>
+
+								<input type="file" class="input-file" id="file6" name="file6">
+								<label for="file6" class="lbl-file">
+									<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<span class="col-sm-22 control-label">Chứng mình nhân dân<i>(Chụp rõ tên và dấu vân tay)</i></span>
+							<div class="col-sm-33">
+								<input type="file" class="input-file" id="file7" name="file7">
+								<label for="file7" class="lbl-file">
+									<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+								</label>
+
+								<input type="file" class="input-file" id="file8" name="file8">
+								<label for="file8" class="lbl-file">
+									<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<span class="col-sm-22 control-label">&nbsp;</span>
+							<div class="col-sm-33">
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary btn-block btn-submit">Đăng ký</button>
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div><!-- end tab-1 -->
+
+				<div role="tabpanel" class="tab-pane" id="business">
+					<form class="form-horizontal">
+
+						<div class="summary">
+							<h2 class="ttl-group">Thông tin doanh nghiệp</h2>
+
+							<div class="form-group">
+								<label for="company" class="col-sm-22 control-label">Tên doanh nghiệp:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="company" name="company">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="country" class="col-sm-22 control-label">Địa chỉ:</label>
+								<div class="col-sm-33">
+									<div class="clearfix wrap-2col">
+										<div class="col">
+											<select id="country" type="text" can-value="country" class="form-control form-dropdown select-country" aria-required="true">
+												<option value="VUT">Vanuatu</option>
+												<option value="VAT">Vatican</option>
+												<option value="VEN">Venezuela</option>
+												<option value="VNM" selected>Việt Nam</option>
+												<option value="VIR">Virgin Islands (U.S.)</option>
+												<option value="GBR">Vương quốc Anh</option>
+												<option value="ESH">Western Sahara</option>
+												<option value="ITA">Ý</option>
+												<option value="YEM">Yemen</option>
+												<option value="ZMB">Zambia</option>
+												<option value="ZWE">Zimbabwe</option>
+											</select>
+										</div>
+										<div class="col">
+											<select name="sl-province" id="sl-provice" class="form-control">
+												<option value="3">TP.Hồ Chí Minh</option><option value="5">Hà Nội</option><option value="9">Đà Nẵng</option><option value="82">An Giang</option><option value="102">Bà Rịa - Vũng Tàu</option><option value="103">Bắc Giang</option><option value="104">Bắc Kạn</option><option value="105">Bạc Liêu</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="address" class="col-sm-22 control-label">Nhập đỉa chỉ chi tiết:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="address" name="address">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="tax" class="col-sm-22 control-label">Mã số thuế</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="tax" name="tax">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="certificate" class="col-sm-22 control-label">Giấy phép ĐKKD:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="certificate" name="certificate">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="phone" class="col-sm-22 control-label">Số điện thoại:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="phone" name="phone">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="fax" class="col-sm-22 control-label">Số fax:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="fax" name="fax">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="email" class="col-sm-22 control-label">Email:</label>
+								<div class="col-sm-33">
+									<input type="email" class="form-control" id="email" name="email">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="website" class="col-sm-22 control-label">Website:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="website" name="website">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<span class="col-sm-22 control-label">Logo doanh nghiệp:</span>
+								<div class="col-sm-33">
+									<input type="file" class="input-file" id="file9" name="file9">
+									<label for="file9" class="lbl-file">
+										<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+									</label>
+								</div>
+							</div>
+						</div><!-- end .summary -->
+
+						<div class="summary">
+							<div class="form-group">
+								<span class="col-sm-22 control-label">
+									<h2 class="ttl-group">Loại hình kinh doanh</h2>
+								</span>
+								<div class="col-sm-33">
+									<div class="wrap-2col clearfix">
+										<div class="col">
+											<ul>
+												<li><input type="checkbox" name="chk1[]" value="1" id="chk01" /><label for="chk01" class="chk-lbl">Vận tải đi bộ</label></li>
+												<li><input type="checkbox" name="chk1[]" value="2" id="chk02" /><label for="chk02" class="chk-lbl">Vận tải thủy</label></li>
+												<li><input type="checkbox" name="chk1[]" value="3" id="chk03" /><label for="chk03" class="chk-lbl">Vận tải biển</label></li>
+												<li><input type="checkbox" name="chk1[]" value="4" id="chk04" /><label for="chk04" class="chk-lbl">Vận tải hàng không</label></li>
+												<li><input type="checkbox" name="chk1[]" value="8" id="chk08" /><label for="chk08" class="chk-lbl">3PL,4PL</label></li>
+												<li><input type="checkbox" name="chk1[]" value="5" id="chk05" /><label for="chk05" class="chk-lbl">Giao nhận hàng hóa</label></li>
+												<li><input type="checkbox" name="chk1[]" value="6" id="chk06" /><label for="chk06" class="chk-lbl">Dịch vụ thông quan</label></li>
+												<li><input type="checkbox" name="chk1[]" value="7" id="chk07" /><label for="chk07" class="chk-lbl">Dịch vụ kiểm đếm</label></li>
+											</ul>
+										</div>
+										<div class="col">
+											<ul>
+												<li><input type="checkbox" name="chk1[]" value="9" id="chk09" /><label for="chk09" class="chk-lbl">Dịch vụ bốc xếp</label></li>
+												<li><input type="checkbox" name="chk1[]" value="10" id="chk010" /><label for="chk010" class="chk-lbl">Dịch vụ kiểm định</label></li>
+												<li><input type="checkbox" name="chk1[]" value="11" id="chk011" /><label for="chk011" class="chk-lbl">Dịch vụ cân hàng</label></li>
+												<li><input type="checkbox" name="chk1[]" value="12" id="chk012" /><label for="chk012" class="chk-lbl">Dịch vụ đóng gói</label></li>
+												<li><input type="checkbox" name="chk1[]" value="13" id="chk013" /><label for="chk013" class="chk-lbl">Dịch vụ tư vấn logistics</label></li>
+												<li><input type="checkbox" name="chk1[]" value="14" id="chk014" /><label for="chk014" class="chk-lbl">Dịch vụ phun trùng</label></li>
+												<li><input type="checkbox" name="chk1[]" value="15" id="chk015" /><label for="chk015" class="chk-lbl">Dịch vụ cho thuê thiết bị</label></li>
+												<li><input type="checkbox" name="chk1[]" value="16" id="chk016" /><label for="chk016" class="chk-lbl">Khác</label></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="summary">
+							<h2 class="ttl-group">Thông tin quản trị viên</h2>
+
+							<div class="form-group">
+								<label for="fullname2" class="col-sm-22 control-label">Tên:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="fullname2" name="fullname2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="email2" class="col-sm-22 control-label">Email:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="email2" name="email2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="phone2" class="col-sm-22 control-label">Số điện thoại:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="phone2" name="phone2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="pwd" class="col-sm-22 control-label">Tạo mật khẩu:</label>
+								<div class="col-sm-33">
+									<input type="password" class="form-control" id="pwd" name="pwd">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="cf-pwd" class="col-sm-22 control-label">Nhập lại mật khẩu:</label>
+								<div class="col-sm-33">
+									<input type="password" class="form-control" id="cf-pwd" name="cf-pwd">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="skype" class="col-sm-22 control-label">Skype:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="skype" name="skype">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<span class="col-sm-22 control-label">Avatar:</span>
+								<div class="col-sm-33">
+									<input type="file" class="input-file" id="file10" name="file10">
+									<label for="file10" class="lbl-file">
+										<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="summary">
+							<div class="bar-control">
+								<h2 class="ttl-group">Thông tin phương tiện</h2>
+								<a href="javascript:void(0);" class="trans add-record"><i class="fa fa-plus"></i> Thêm phương tiện</a>
+							</div>
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th rowspan="2">Loại <br />phương <br />tiện</th>
+											<th rowspan="2">Biển số <br />phương tiện</th>
+											<th rowspan="2">Hình ảnh</th>
+											<th rowspan="2">Số giấy phép <br />vận tải</th>
+											<th rowspan="2">Số sổ BH</th>
+											<th rowspan="2">Số <br />kiểm định</th>
+											<th colspan="3">Thông tin tài xế</th>
+											<th rowspan="2">&nbsp;</th>
+										</tr>
+										<tr>
+											<th class="thin">Họ và tên</th>
+											<th class="thin">Giấy phép lái xe</th>
+											<th class="thin">Số CMND</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Xe tải 500kg</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>
+												<a href="javascript:void(0);" title="Sửa"><i class="fa fa-pencil"></i></a>&nbsp;
+												<a href="javascript:void(0);" title="Xóa"><i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Xe 3 bánh</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>
+												<a href="javascript:void(0);" title="Sửa"><i class="fa fa-pencil"></i></a>&nbsp;
+												<a href="javascript:void(0);" title="Xóa"><i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Xe máy</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>
+												<a href="javascript:void(0);" title="Sửa"><i class="fa fa-pencil"></i></a>&nbsp;
+												<a href="javascript:void(0);" title="Xóa"><i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Xe tải 1000kg</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>
+												<a href="javascript:void(0);" title="Sửa"><i class="fa fa-pencil"></i></a>&nbsp;
+												<a href="javascript:void(0);" title="Xóa"><i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Xe tải 1 tấn</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>
+												<a href="javascript:void(0);" title="Sửa"><i class="fa fa-pencil"></i></a>&nbsp;
+												<a href="javascript:void(0);" title="Xóa"><i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Xe tải 1.5 tấn</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>
+												<a href="javascript:void(0);" title="Sửa"><i class="fa fa-pencil"></i></a>&nbsp;
+												<a href="javascript:void(0);" title="Xóa"><i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Xe tải 5 tấn</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>
+												<a href="javascript:void(0);" title="Sửa"><i class="fa fa-pencil"></i></a>&nbsp;
+												<a href="javascript:void(0);" title="Xóa"><i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td>Xe container</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>
+												<a href="javascript:void(0);" title="Sửa"><i class="fa fa-pencil"></i></a>&nbsp;
+												<a href="javascript:void(0);" title="Xóa"><i class="fa fa-trash"></i></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<span class="col-sm-22 control-label">&nbsp;</span>
+							<div class="col-sm-33">
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary btn-block btn-submit">Đăng ký</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div><!-- end .tab-2 -->
+
+				<div role="tabpanel" class="tab-pane" id="customer">
+					<form class="form-horizontal">
+
+						<div class="summary">
+							<h2 class="ttl-group">Thông tin doanh nghiệp</h2>
+
+							<div class="form-group">
+								<label for="company2" class="col-sm-22 control-label">Tên doanh nghiệp:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="company2" name="company2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="country2" class="col-sm-22 control-label">Địa chỉ:</label>
+								<div class="col-sm-33">
+									<div class="clearfix wrap-2col">
+										<div class="col">
+											<select id="country2" name="country2" type="text" can-value="country2" class="form-control form-dropdown select-country" aria-required="true">
+												<option value="VUT">Vanuatu</option>
+												<option value="VAT">Vatican</option>
+												<option value="VEN">Venezuela</option>
+												<option value="VNM" selected>Việt Nam</option>
+												<option value="VIR">Virgin Islands (U.S.)</option>
+												<option value="GBR">Vương quốc Anh</option>
+												<option value="ESH">Western Sahara</option>
+												<option value="ITA">Ý</option>
+												<option value="YEM">Yemen</option>
+												<option value="ZMB">Zambia</option>
+												<option value="ZWE">Zimbabwe</option>
+											</select>
+										</div>
+										<div class="col">
+											<select name="sl-province2" id="sl-provice2" class="form-control">
+												<option value="3">TP.Hồ Chí Minh</option><option value="5">Hà Nội</option><option value="9">Đà Nẵng</option><option value="82">An Giang</option><option value="102">Bà Rịa - Vũng Tàu</option><option value="103">Bắc Giang</option><option value="104">Bắc Kạn</option><option value="105">Bạc Liêu</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="address2" class="col-sm-22 control-label">Nhập đỉa chỉ chi tiết:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="address2" name="address2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="tax2" class="col-sm-22 control-label">Mã số thuế</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="tax2" name="tax2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="certificate2" class="col-sm-22 control-label">Giấy phép ĐKKD:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="certificate2" name="certificate2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="phone3" class="col-sm-22 control-label">Số điện thoại:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="phone3" name="phone3">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="fax2" class="col-sm-22 control-label">Số fax:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="fax2" name="fax">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="email2" class="col-sm-22 control-label">Email:</label>
+								<div class="col-sm-33">
+									<input type="email" class="form-control" id="email2" name="email2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="website2" class="col-sm-22 control-label">Website:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="website2" name="website2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<span class="col-sm-22 control-label">Logo doanh nghiệp:</span>
+								<div class="col-sm-33">
+									<input type="file" class="input-file" id="file11" name="file11">
+									<label for="file11" class="lbl-file">
+										<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+									</label>
+								</div>
+							</div>
+						</div><!-- end .summary -->
+
+						<div class="summary">
+							<div class="form-group">
+								<span class="col-sm-22 control-label">
+									<h2 class="ttl-group">Loại hình kinh doanh</h2>
+								</span>
+								<div class="col-sm-33">
+									<div class="wrap-2col clearfix">
+										<div class="col">
+											<ul>
+												<li><input type="checkbox" name="chk2[]" value="17" id="chk017" /><label for="chk01" class="chk-lbl">Thương mại điện tử</label></li>
+												<li><input type="checkbox" name="chk2[]" value="18" id="chk18" /><label for="chk02" class="chk-lbl">Cửa hàng, shop</label></li>
+												<li><input type="checkbox" name="chk2[]" value="19" id="chk19" /><label for="chk03" class="chk-lbl">Mua bán, cho thuê</label></li>
+												<li><input type="checkbox" name="chk2[]" value="20" id="chk20" /><label for="chk04" class="chk-lbl">Môi giới, ủy thác XNK</label></li>
+												<li><input type="checkbox" name="chk2[]" value="21" id="chk21" /><label for="chk08" class="chk-lbl">Xuất nhập khẩu</label></li>
+												<li><input type="checkbox" name="chk2[]" value="22" id="chk22" /><label for="chk05" class="chk-lbl">Giao nhận</label></li>
+												<li><input type="checkbox" name="chk2[]" value="23" id="chk23" /><label for="chk06" class="chk-lbl">Khác</label></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="summary">
+							<h2 class="ttl-group">Thông tin quản trị viên</h2>
+
+							<div class="form-group">
+								<label for="fullname4" class="col-sm-22 control-label">Tên:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="fullname4" name="fullname4">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="email4" class="col-sm-22 control-label">Email:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="email4" name="email4">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="phone4" class="col-sm-22 control-label">Số điện thoại:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="phone4" name="phone4">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="pwd2" class="col-sm-22 control-label">Tạo mật khẩu:</label>
+								<div class="col-sm-33">
+									<input type="password" class="form-control" id="pwd2" name="pwd2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="cf-pwd2" class="col-sm-22 control-label">Nhập lại mật khẩu:</label>
+								<div class="col-sm-33">
+									<input type="password" class="form-control" id="cf-pwd2" name="cf-pwd2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="skype2" class="col-sm-22 control-label">Skype:</label>
+								<div class="col-sm-33">
+									<input type="text" class="form-control" id="skype2" name="skype2">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<span class="col-sm-22 control-label">Avatar:</span>
+								<div class="col-sm-33">
+									<input type="file" class="input-file" id="file12" name="file12">
+									<label for="file12" class="lbl-file">
+										<figure><img src="../images/ico-camera.png" alt=" " /></figure>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<span class="col-sm-22 control-label">&nbsp;</span>
+							<div class="col-sm-33">
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary btn-block btn-submit">Đăng ký</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div><!-- end tab-3 -->
+			</div>
+
+		</div>
+
+		
+		<footer class="site-footer role-footer" id="footer">
+			<div class="footer-bot">
+				<div class="container">
+					<div class="navbar-left links-bot">
+						<ul class="list-inline">
+							<li><a href="../policy/" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+							<li><a href="../privacy/" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+						</ul>
+					</div>
+					<div class="pull-right getapp">
+						<ul class="list-inline">
+							<li><a href="#" class="trans"><img src="../images/app-store.png" alt="App Store" /></a></li>
+							<li><a href="#" class="trans"><img src="../images/google-play.png" alt="Google Play" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer><!-- end .footer-bot -->
+
+	</div><!-- end .wrapper -->
+	
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-filestyle.min.js"> </script>
+	<script src="../js/scripts.js"></script>
+
+</body>
+</html>
